@@ -152,7 +152,7 @@ export const deleteAlbum: RequestHandler = async (req: Request, res: Response) =
     try {
         let albumId = parseInt(req.params.albumId as string);
 
-        console.log('albumId', albumId);
+        console.log('brandId', albumId);
         if (!Number.isNaN(albumId)) {
             const response = await AlbumDao.deleteBrand(albumId);
 
